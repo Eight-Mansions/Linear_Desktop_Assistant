@@ -1,0 +1,66 @@
+# THIS FILE WILL BE OVERWRITTEN WITH UPDATES!!!
+
+# You can overwrite these values locally by copying this file and naming
+# it "local-config.txt". This file will be updated in future releases,
+# so changes to this file will be overwritten!!!
+
+# Config options for the Desktop Assistant.
+# All lines starting with # are treated as comments and ignored.
+
+# Values follow this format:
+# PROPERTY=VALUE
+# Whitespace will be trimmed, so spaces are okay.
+
+# *************
+# Timing Values
+# *************
+
+# Work length (minutes) sets the time from starting work until the assistant prompts for a break.
+# Default: 60 minutes
+WORK_LENGTH=60
+
+# Break length (minutes) sets the time from break start until the assistant prompts to start working again.
+# Default: 10 minutes
+BREAK_LENGTH=10
+
+# Stand frequency determines how frequently the assistant will ask you to stand up.
+# The frequency relates to the number of work cycles that have happened, so a value of two means every
+# other work cycle will prompt for a standing section.
+# Example: a STAND_FREQUENCY of 2 means that on the 2nd, 4th, 6th, etc work cycle, a stand prompt will occur.
+# A STAND_FREQUENCY of 1 means that every work cycle will have a stand prompt.
+
+# To disable this feature, set the STAND_FREQUENCY to 0.
+# Default: 2
+STAND_FREQUENCY=2
+
+# Stand time indicates how long a standing section should be timed for. Standing always happens at the back
+# half of the work cycle. So if a work cycle is 60 minutes and the stand time is 20 minutes, then the standing
+# prompt will occur at 40 minutes and last until it's time for a break
+# Default: 30
+STAND_TIME=30
+
+# *************
+# Dialogue Text
+# *************
+BREAK_PROMPT_TEXT=Do you want to take a break already?\n死ねばいいのに
+
+WORK_START_TEXT=Ready to start working already?\nアホくせに
+
+STAND_UP_TEXT=Let's stand up for a bit already!\n空はいっぱい不安な言葉
+
+# ***************
+# Window Position
+# ***************
+
+# Modify these for two sets of configurable window positions
+# You can access these in the system tray menu
+
+POSITION_ONE_OFFSET_X=1920
+POSITION_ONE_OFFSET_Y=0
+
+POSITION_TWO_OFFSET_X=-1920
+POSITION_TWO_OFFSET_Y=0
+
+# This saves the last used position so that you don't have to keep changing it
+# 0 is the default, 1 and 2 are the above saved offsets
+CURRENT_POSITION=0
